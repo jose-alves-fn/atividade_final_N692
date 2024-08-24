@@ -35,15 +35,15 @@ public class TabelaHash {
         }
     }
 
-    public void imprimirTabela() {
-        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
-            char chave = entry.getKey();
-            System.out.println("Chave: " + chave);
-            for (Palavra palavra : entry.getValue()) {
-                System.out.println(palavra);
-            }
-        }
-    }
+//    public void imprimirTabela() {
+//        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
+//            char chave = entry.getKey();
+//            System.out.println("Chave: " + chave);
+//            for (Palavra palavra : entry.getValue()) {
+//                System.out.println(palavra);
+//            }
+//        }
+//    }
 
     public Map<Character, List<Palavra>> getTabela() {
         return tabela;

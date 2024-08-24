@@ -11,10 +11,7 @@ public class ProcessadorDeTexto {
 
             for (String palavraStr : palavras) {
 
-                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9À-ÿ-]", "").toLowerCase();
-
-
-
+                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9À-ÿ-]", "").toLowerCase();;
 
                 if (!palavraLimpa.isEmpty()) {
                     Palavra palavra = new Palavra(palavraLimpa);
