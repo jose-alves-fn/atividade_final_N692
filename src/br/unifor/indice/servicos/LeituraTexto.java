@@ -31,7 +31,7 @@ public class LeituraTexto {
 //        LeituraTexto leitor = new LeituraTexto("src/br/unifor/indice/recursos/texto.txt");
 //        String texto = leitor.lerTexto();
 //        System.out.println(texto);
-    }
+}
 
 
 

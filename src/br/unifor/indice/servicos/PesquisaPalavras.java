@@ -1,7 +1,6 @@
 package br.unifor.indice.servicos;
 
 import br.unifor.indice.modelo.Palavra;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
