@@ -1,5 +1,6 @@
 package br.unifor.indice.principal;
 
+//// Para ver tudo no terminal
 //import br.unifor.indice.servicos.LeituraTexto;
 //import br.unifor.indice.servicos.TabelaHash;
 //import br.unifor.indice.modelo.Palavra;
