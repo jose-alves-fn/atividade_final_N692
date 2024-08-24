@@ -10,7 +10,11 @@ public class ProcessadorDeTexto {
             String[] palavras = linhas[i].split("\\s+");
 
             for (String palavraStr : palavras) {
-                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9À-ÿ]", "");
+
+                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9À-ÿ-]", "").toLowerCase();
+
+
+
 
                 if (!palavraLimpa.isEmpty()) {
                     Palavra palavra = new Palavra(palavraLimpa);
