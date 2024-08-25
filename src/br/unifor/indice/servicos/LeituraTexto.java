@@ -26,12 +26,13 @@ public class LeituraTexto {
 
         return conteudo.toString();
     }
+}
 
 //    public static void main(String[] args) {
 //        LeituraTexto leitor = new LeituraTexto("src/br/unifor/indice/recursos/texto.txt");
 //        String texto = leitor.lerTexto();
 //        System.out.println(texto);
-}
+
 
 
 

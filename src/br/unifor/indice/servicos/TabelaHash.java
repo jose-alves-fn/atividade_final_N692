@@ -33,7 +33,10 @@ public class TabelaHash {
             listaPalavras.add(palavra);
         }
     }
-
+    public Map<Character, List<Palavra>> getTabela() {
+        return tabela;
+    }
+}
 //    public void imprimirTabela() {
 //        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
 //            char chave = entry.getKey();
@@ -44,7 +47,4 @@ public class TabelaHash {
 //        }
 //    }
 
-    public Map<Character, List<Palavra>> getTabela() {
-        return tabela;
-    }
-}
+
