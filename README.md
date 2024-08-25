@@ -399,7 +399,6 @@ public class GravarResultados {
 
 ## 👯 Como acessar este projeto
 
----
 ### Basta clonar este repositório por meio do git clone:
 
 ```sh 
