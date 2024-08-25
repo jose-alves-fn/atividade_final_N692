@@ -2,8 +2,6 @@
 
 **Geração de Índice Remissivo** é um projeto escrito na linguaguem Java para a compontente de Estrutura de dados (N692) do curso de Análise e Desenvolvimento de Sistemas da Universidade de Fortaleza (Unifor).
 
----
-
 ## 🔭 Características do Projeto
 
 Esta aplicação Java é um sistema de indexação e busca de palavras-chave em um texto. Suas principais funcionalidades são:
@@ -25,8 +23,6 @@ O sistema utiliza uma estrutura de dados de tabela hash para armazenar e buscar 
 
 A aplicação é estruturada em várias classes, cada uma com responsabilidades específicas, como leitura de arquivos, processamento de texto, gerenciamento da tabela hash, pesquisa de palavras e gravação de resultados.
 Este sistema pode ser útil para criar índices remissivos de livros, analisar a frequência de palavras em textos ou realizar buscas rápidas de termos específicos em documentos grandes.
-
----
 
 ## 📦 Classes
 
