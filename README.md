@@ -352,9 +352,7 @@ package br.unifor.indice.servicos;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class GravarResultados {
 
@@ -371,8 +369,11 @@ public class GravarResultados {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoArquivo))) {
             for (Map.Entry<String, List<Integer>> entry : resultadosOrdenados.entrySet()) {
                 String palavra = entry.getKey();
+
                 List<Integer> ocorrencias = entry.getValue();
-                writer.write(palavra + ": " + ocorrencias);
+                Set<Integer> ocorrenciasUnicas = new TreeSet<>(ocorrencias);
+
+                writer.write(palavra + ": " + ocorrenciasUnicas);
                 writer.newLine();
             }
         } catch (IOException e) {
