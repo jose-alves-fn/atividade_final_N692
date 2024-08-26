@@ -17,7 +17,7 @@ public class TabelaHash {
         char letraInicial = palavra.getPalavra().charAt(0);
         tabela.putIfAbsent(letraInicial, new ArrayList<>());
 
-        List<Palavra> listaPalavras = tabela.get(letraInicial);
+        List<Palavra> listaPalavras = tabela.get(letraInicial); // Lista auxiliar
         boolean encontrada = false;
 
         for (Palavra p : listaPalavras) {
@@ -36,7 +36,7 @@ public class TabelaHash {
     public Map<Character, List<Palavra>> getTabela() {
         return tabela;
     }
-}
+
 //    public void imprimirTabela() {
 //        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
 //            char chave = entry.getKey();
@@ -46,5 +46,7 @@ public class TabelaHash {
 //            }
 //        }
 //    }
+}
+
 
 
