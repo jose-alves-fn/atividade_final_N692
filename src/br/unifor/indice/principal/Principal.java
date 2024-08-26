@@ -51,6 +51,7 @@ public class Principal {
         LeituraTexto leitorTexto = new LeituraTexto(caminhoTexto);
         String texto = leitorTexto.lerTexto();
 
+        // Acionando a tabela hash
         TabelaHash tabelaHash = new TabelaHash();
         ProcessadorDeTexto processadorDeTexto = new ProcessadorDeTexto();
         processadorDeTexto.processarTexto(texto, tabelaHash);
