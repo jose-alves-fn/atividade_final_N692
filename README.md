@@ -232,7 +232,7 @@ public class TabelaHash {
 
     public void inserirPalavra(Palavra palavra, int linha) {
         char letraInicial = palavra.getPalavra().charAt(0);
-        tabela.putIfAbsent(letraInicial, new ArrayList<>());
+        tabela.putIfAbsent(letraInicial, new LinkedList<>());
 
         List<Palavra> listaPalavras = tabela.get(letraInicial);
         boolean encontrada = false;
