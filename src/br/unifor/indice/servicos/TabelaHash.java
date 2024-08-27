@@ -1,10 +1,8 @@
 package br.unifor.indice.servicos;
 
 import br.unifor.indice.modelo.Palavra;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 public class TabelaHash {
     private Map<Character, List<Palavra>> tabela;
@@ -15,7 +13,7 @@ public class TabelaHash {
 
     public void inserirPalavra(Palavra palavra, int linha) {
         char letraInicial = palavra.getPalavra().charAt(0);
-        tabela.putIfAbsent(letraInicial, new ArrayList<>());
+        tabela.putIfAbsent(letraInicial, new LinkedList<>());
 
         List<Palavra> listaPalavras = tabela.get(letraInicial); // Lista auxiliar
         boolean encontrada = false;
