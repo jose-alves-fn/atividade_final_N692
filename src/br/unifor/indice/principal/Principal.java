@@ -1,5 +1,5 @@
 package br.unifor.indice.principal;
-//
+
 //// Para ver tudo no terminal
 //
 //import br.unifor.indice.servicos.LeituraTexto;
