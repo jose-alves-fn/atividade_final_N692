@@ -78,6 +78,7 @@ A classe `Palavra` encapsula uma palavra e suas ocorrências em um texto, permit
 package br.unifor.indice.modelo;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Palavra {
@@ -87,7 +88,7 @@ public class Palavra {
 
     public Palavra(String palavra) {
         this.palavra = palavra;
-        this.ocorrencias = new ArrayList<>();
+        this.ocorrencias = new LinkedList<>();
     }
 
     public String getPalavra() {
@@ -232,7 +233,7 @@ public class TabelaHash {
 
     public void inserirPalavra(Palavra palavra, int linha) {
         char letraInicial = palavra.getPalavra().charAt(0);
-        tabela.putIfAbsent(letraInicial, new ArrayList<>());
+        tabela.putIfAbsent(letraInicial, new LinkedList<>());
 
         List<Palavra> listaPalavras = tabela.get(letraInicial);
         boolean encontrada = false;
@@ -352,9 +353,7 @@ package br.unifor.indice.servicos;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class GravarResultados {
 
@@ -371,8 +370,11 @@ public class GravarResultados {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoArquivo))) {
             for (Map.Entry<String, List<Integer>> entry : resultadosOrdenados.entrySet()) {
                 String palavra = entry.getKey();
+
                 List<Integer> ocorrencias = entry.getValue();
-                writer.write(palavra + ": " + ocorrencias);
+                Set<Integer> ocorrenciasUnicas = new TreeSet<>(ocorrencias);
+
+                writer.write(palavra + ": " + ocorrenciasUnicas);
                 writer.newLine();
             }
         } catch (IOException e) {

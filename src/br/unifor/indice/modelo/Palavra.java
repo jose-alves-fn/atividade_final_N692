@@ -1,6 +1,7 @@
 package br.unifor.indice.modelo;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Palavra {
@@ -10,7 +11,7 @@ public class Palavra {
 
     public Palavra(String palavra) {
         this.palavra = palavra;
-        this.ocorrencias = new ArrayList<>();
+        this.ocorrencias = new LinkedList<>();
     }
 
     public String getPalavra() {
