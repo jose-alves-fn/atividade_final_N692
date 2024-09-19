@@ -35,27 +35,6 @@ public class TabelaHash {
         return tabela;
     }
 
-//    public void imprimirTabela() {
-//        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
-//            char chave = entry.getKey();
-//            System.out.println("Chave: " + chave);
-//            for (Palavra palavra : entry.getValue()) {
-//                System.out.println(palavra);
-//            }
-//        }
-
-//    public void imprimirTabela() {
-//        for (Map.Entry<Character, List<Palavra>> entry : tabela.entrySet()) {
-//            char chave = entry.getKey();
-//            int hashCode = chave; // Obtém o hash code da chave (caractere)
-//
-//            System.out.println("Chave: " + chave + " --- HashCode: " + hashCode);
-//
-//            for (Palavra palavra : entry.getValue()) {
-//                System.out.println("   Palavra: " + palavra.getPalavra() + " --- Ocorrências: " + palavra.getOcorrencias());
-//            }
-//        }
-//    }
 }
 
 

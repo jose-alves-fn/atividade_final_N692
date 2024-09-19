@@ -1,40 +1,5 @@
 package br.unifor.indice.principal;
 
-//// Para ver tudo no terminal
-//
-//import br.unifor.indice.servicos.LeituraTexto;
-//import br.unifor.indice.servicos.TabelaHash;
-//import br.unifor.indice.modelo.Palavra;
-//
-//public class Principal {
-//
-//    public static void main(String[] args) {
-//        LeituraTexto leitor = new LeituraTexto("src/br/unifor/indice/recursos/texto.txt");
-//        String texto = leitor.lerTexto();
-//
-//        TabelaHash tabelaHash = new TabelaHash();
-//        String[] linhas = texto.split("\n");
-//
-//        for (int i = 0; i < linhas.length; i++) {
-//            String[] palavras = linhas[i].split("\\s+");
-//
-//            for (String palavraStr : palavras) {
-//                // Remove caracteres especiais, mas mantém números e letras
-////                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9]", "");
-//                String palavraLimpa = palavraStr.replaceAll("[^a-zA-Z0-9À-ÿ]", ""); // Preserva caracteres especiais
-//
-//
-//                if (!palavraLimpa.isEmpty()) {
-//                    Palavra palavra = new Palavra(palavraLimpa);
-//                    tabelaHash.inserirPalavra(palavra, i + 1);
-//                }
-//            }
-//        }
-//
-//        tabelaHash.imprimirTabela();
-//    }
-//}
-
 import br.unifor.indice.servicos.*;
 import java.util.List;
 import java.util.Map;
